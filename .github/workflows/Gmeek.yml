@@ -57,12 +57,8 @@ jobs:
 
       - name: Replace content in index.html
         run: |
-          # 进入生成的 docs 目录
           cd ${{ github.workspace }}/docs
-          # 替换 index.html 中的 <a class="blogTitle"> 为 <a class="blogTitle" href="https://mxx.app">
           sed -i 's|<a class="blogTitle">|<a class="blogTitle" href="https://mxx.app">|g' index.html
-          echo "Replaced content in index.html successfully."
-
 
       - name: update html
         run: |
