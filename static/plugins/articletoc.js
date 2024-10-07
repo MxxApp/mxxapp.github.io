@@ -41,14 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const css = `
         :root {
             --toc-bg: #fff;
-            --toc-border: #3a4047;
+            --toc-border: #e1e4e8;
             --toc-text: #24292e;
             --toc-hover: #f6f8fa;
-            --toc-icon-bg: #21262d;
-            --toc-icon-color: #919aa4;
-            --toc-icon-active-bg: #21262d;
-            --toc-icon-active-bc: #50a7ff;
-            --toc-icon-active-color: #ff6d6d;
+            --toc-icon-bg: #fff;
+            --toc-icon-color: #ad6598;
+            --toc-icon-active-bg: #813c85;
+            --toc-icon-active-color: #fff;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -57,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 --toc-border: #444c56;
                 --toc-text: #adbac7;
                 --toc-hover: #373e47;
-                --toc-icon-bg: #22272e;
-                --toc-icon-color: #ad6598;
-                --toc-icon-active-bg: #813c85;
-                --toc-icon-active-color: #adbac7;
+                --toc-icon-bg: #21262d;
+                --toc-icon-color: #c2c2c2;
+                --toc-icon-active-bg: #2d333bf5;
+                --toc-icon-active-color: #f85d5d;
             }
         }
 
