@@ -23,9 +23,9 @@ jobs:
 
       - name: Get config.json
         run: |
-          echo "====== check config.josn file ======"
+          echo "====== check config.json file ======"
           cat config.json
-          echo "====== check config.josn end  ======"
+          echo "====== check config.json end  ======"
           sudo apt-get install jq
 
       - name: Set up Python
@@ -55,13 +55,14 @@ jobs:
           cp -a /opt/Gmeek/backup ${{ github.workspace }} 
           cp /opt/Gmeek/blogBase.json ${{ github.workspace }} 
 
-       - name: Replace content in index.html
+      - name: Replace content in index.html
         run: |
           # 进入生成的 docs 目录
           cd ${{ github.workspace }}/docs
-          # 替换 index.html 中的某些内容
+          # 替换 index.html 中的 <a class="blogTitle"> 为 <a class="blogTitle" href="https://mxx.app">
           sed -i 's/<a class="blogTitle">/<a class="blogTitle" href="https://mxx.app">/g' index.html
-          
+          echo "Replaced content in index.html successfully."
+
       - name: update html
         run: |
           git config --local user.email "$(jq -r ".email" config.json)"
