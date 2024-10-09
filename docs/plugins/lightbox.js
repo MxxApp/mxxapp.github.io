@@ -90,8 +90,8 @@
         }
         .lb-lightbox-nav, .lb-lightbox-close {
           position: absolute;
-          background-color: rgba(255, 98, 98, 0.8);
-          color: #ffffff;
+          background-color: rgba(255, 255, 255, 0.5);
+          color: #ff0000;
           border: none;
           border-radius: 50%;
           cursor: pointer;
@@ -121,7 +121,7 @@
           .lb-lightbox-nav, .lb-lightbox-close {
             width: 40px;
             height: 40px;
-            font-size: 20px;
+            font-size: 30px;
           }
         }
       `;
