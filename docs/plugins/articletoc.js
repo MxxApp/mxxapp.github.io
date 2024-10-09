@@ -12,21 +12,12 @@ function createTOC() {
     const contentContainer = document.querySelector('.markdown-body');
     contentContainer.appendChild(tocElement);
 
-    // 添加“回到顶部”链接
-    const backToTopLink = document.createElement('a');
-    backToTopLink.href = '#';
-    backToTopLink.textContent = 'Back to Top';
-    backToTopLink.className = 'toc-link back-to-top';
-    tocElement.appendChild(backToTopLink);
-
-    // 添加“返回首页”链接
     const backToHomeLink = document.createElement('a');
-    backToHomeLink.href = '/';  // 根据实际主页链接设置此值
-    backToHomeLink.textContent = 'Home';
+    backToHomeLink.href = '/'; 
+    backToHomeLink.textContent = '首页';
     backToHomeLink.className = 'toc-link back-to-home';
     tocElement.appendChild(backToHomeLink);
 
-    // 遍历标题生成目录
     const headings = contentContainer.querySelectorAll('h1, h2, h3, h4, h5, h6');
     headings.forEach(heading => {
         if (!heading.id) {
@@ -39,6 +30,12 @@ function createTOC() {
         link.style.paddingLeft = `${(parseInt(heading.tagName.charAt(1)) - 1) * 10}px`;
         tocElement.appendChild(link);
     });
+
+    const backToTopLink = document.createElement('a');
+    backToTopLink.href = '#';
+    backToTopLink.textContent = '返回顶部';
+    backToTopLink.className = 'toc-link back-to-top';
+    tocElement.appendChild(backToTopLink);
 }
 
 function toggleTOC() {
@@ -111,9 +108,13 @@ document.addEventListener("DOMContentLoaded", function () {
             border-bottom: 1px solid var(--toc-border);
             transition: background-color 0.2s ease, padding-left 0.2s ease;
         }
-        .toc a.back-to-top,
         .toc a.back-to-home {
             font-weight: bold;
+            color: var(--toc-icon-color);
+        }
+        .toc a.back-to-top {
+            font-weight: bold;
+            margin-top: 10px; /* 给“回到顶部”链接增加顶部外边距 */
             color: var(--toc-icon-color);
         }
         .toc a.back-to-top:hover,
