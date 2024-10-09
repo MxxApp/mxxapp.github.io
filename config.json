@@ -14,6 +14,6 @@
     "nightTheme":"dark_colorblind",
     "bottomText": "<p>本博客所有文章除特别声明外，均采用&nbsp;<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank'>CC BY-NC-SA 4.0</a>&nbsp;许可协议。转载请注明来自&nbsp;<a href='https://mxx.app' target='_blank'>MXX.APP</a></p>\n<p>原文链接：<a href='${originalURL}' target='_blank'>${originalURL}</a></p>",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
-    "script":"<script src='https://mxx.app/plugins/articletoc.js'></script><script src='https://mxx.app/plugins/lightbox.js'></script><script src='https://mxx.app/plugins/copyright.js'></script>",
+    "script":"<script src='https://mxx.app/plugins/articletoc.js'></script><script src='https://mxx.app/plugins/lightbox.js'>",
     "GMEEK_VERSION":"main"
 }
