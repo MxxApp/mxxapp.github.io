@@ -9,8 +9,8 @@
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
     "i18n":"CN",
     "nightTheme":"dark_colorblind",
-    "bottomText":"版权声明",
+    "bottomText":"转载文章请注明来自 MXX.APP",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
-    "script":"<script src='https://mxx.app/plugins/articletoc.js'></script><script src='https://mxx.app/plugins/lightbox.js'></script><script src='https://mxx.app/plugins/replaceContent.js'></script>",
+    "script":"<script src='https://mxx.app/plugins/articletoc.js'></script><script src='https://mxx.app/plugins/lightbox.js'></script><script src='https://mxx.app/plugins/copyright.js'></script>",
     "GMEEK_VERSION":"main"
 }
