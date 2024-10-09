@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .toc-icon {
             position: fixed;
-            bottom: 20px;
+            bottom: 50px;
             right: 20px;
             cursor: pointer;
             font-size: 24px;
