@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const targetElement = document.querySelector('div[style*="float:right;"]');
-    if (targetElement && targetElement.textContent === '转载文章请注明来自 MXX.APP') {
+    if (targetElement && targetElement.textContent === '转载文章请注明来自') {
         const metaURL = document.querySelector('meta[property="og:url"]');
         const originalURL = metaURL ? metaURL.getAttribute('content') : window.location.href;
         targetElement.style.float = 'left';
