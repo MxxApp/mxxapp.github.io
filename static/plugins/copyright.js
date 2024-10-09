@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const targetElement = document.querySelector('div[style*="float:right;"]');
-    if (targetElement && targetElement.textContent === '版权声明') {
+    if (targetElement && targetElement.textContent === '转载文章请注明来自 MXX.APP') {
         targetElement.style.float = 'left';
         const currentURL = window.location.href;
         targetElement.innerHTML = `
