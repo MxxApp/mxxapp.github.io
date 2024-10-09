@@ -90,8 +90,8 @@
         }
         .lb-lightbox-nav, .lb-lightbox-close {
           position: absolute;
-          background-color: rgba(255, 255, 255, 0.8);
-          color: #333;
+          background-color: rgba(255, 98, 98, 0.8);
+          color: #ffffff;
           border: none;
           border-radius: 50%;
           cursor: pointer;
@@ -114,7 +114,7 @@
           top: calc(50% - 25px);
         }
         .lb-lightbox-close {
-          top: 20px;
+          bottom: 50px;
           right: 20px;
         }
         @media (max-width: 768px) {
