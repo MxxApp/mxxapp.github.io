@@ -36,6 +36,19 @@ function createTOC() {
     backToTopLink.textContent = '返回顶部';
     backToTopLink.className = 'toc-link back-to-top';
     tocElement.appendChild(backToTopLink);
+
+    backToTopLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        const tocElement = document.querySelector('.toc');
+        const tocIcon = document.querySelector('.toc-icon');
+        if (tocElement && tocElement.classList.contains('show')) {
+            tocElement.classList.remove('show');
+            tocIcon.classList.remove('active');
+            tocIcon.textContent = '☰';
+        }
+    });
 }
 
 function toggleTOC() {
@@ -114,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .toc a.back-to-top {
             font-weight: bold;
-            margin-top: 10px; /* 给“回到顶部”链接增加顶部外边距 */
+            margin-top: 10px;
             color: var(--toc-icon-color);
         }
         .toc a.back-to-top:hover,
