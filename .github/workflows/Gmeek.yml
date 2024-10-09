@@ -55,11 +55,6 @@ jobs:
           cp -a /opt/Gmeek/backup ${{ github.workspace }} 
           cp /opt/Gmeek/blogBase.json ${{ github.workspace }} 
 
-      - name: Replace content in index.html
-        run: |
-          cd ${{ github.workspace }}/docs
-          sed -i 's|<a class="blogTitle">|<a class="blogTitle" href="https://mxx.app">|g' index.html
-
       - name: update html
         run: |
           git config --local user.email "$(jq -r ".email" config.json)"
