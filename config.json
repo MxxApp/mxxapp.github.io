@@ -13,6 +13,6 @@
     "showPostSource":0,
     "nightTheme":"dark_colorblind",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
-    "script":"<script src='/plugins/articletoc.js?t=<?= Date.now(); ?>'></script><script>var script = document.createElement('script');script.src = '/plugins/lightbox.js?t=' + Date.now();document.body.appendChild(script);</script>",
+    "script":"<script src='/plugins/articletoc.js'></script><script>var script = document.createElement('script');script.src = '/plugins/lightbox.js?t=' + Date.now();document.body.appendChild(script);</script>",
     "GMEEK_VERSION":"main"
 }
