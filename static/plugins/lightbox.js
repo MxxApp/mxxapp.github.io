@@ -46,11 +46,13 @@
           transition: transform 0.2s;
         }
         .lb-lightbox-nav {
-          background: none;
+          background: none; /* 移除背景 */
           border: none;
           color: white;
           font-size: 30px;
           cursor: pointer;
+          position: absolute; /* 绝对定位 */
+          z-index: 1;
         }
       `;
       document.head.appendChild(style);
@@ -66,6 +68,7 @@
       this.overlay.appendChild(this.image);
       document.body.appendChild(this.overlay);
       
+      // 点击覆盖层关闭灯箱
       this.overlay.addEventListener('click', this.handleOverlayClick.bind(this));
     }
 
