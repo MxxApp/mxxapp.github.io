@@ -373,6 +373,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
-<script src='/plugins/articletoc.js?t=<?= Date.now(); ?>'></script><script src='/plugins/lightbox.js?t=<?= Date.now(); ?>'></script>
+<script src='/plugins/articletoc.js'></script><script>var script = document.createElement('script');script.src = '/plugins/lightbox.js?t=' + Date.now();document.body.appendChild(script);</script>
 
 </html>
