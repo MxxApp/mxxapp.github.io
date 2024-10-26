@@ -1,4 +1,3 @@
-    <script>
         // 获取当前时间戳
         const timestamp = new Date().getTime();
 
@@ -11,4 +10,3 @@
         const script2 = document.createElement('script');
         script2.src = '/plugins/lightbox.js?t=' + timestamp;
         document.head.appendChild(script2);
-    </script>
