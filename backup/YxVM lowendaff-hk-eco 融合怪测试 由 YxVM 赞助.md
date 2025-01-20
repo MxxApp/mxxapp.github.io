@@ -1,12 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MXX.APP - MXXAPP - MXX - APP -  梦想乡</title><link>https://mxx.app</link><description>世界很大，梦想很远。</description><copyright>MXX.APP - MXXAPP - MXX - APP -  梦想乡</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/img/logo.png</url><title>avatar</title><link>https://mxx.app</link></image><lastBuildDate>Mon, 20 Jan 2025 12:11:32 +0000</lastBuildDate><managingEditor>MXX.APP - MXXAPP - MXX - APP -  梦想乡</managingEditor><ttl>60</ttl><webMaster>MXX.APP - MXXAPP - MXX - APP -  梦想乡</webMaster><item><title>YxVM lowendaff-hk-eco 融合怪测试 由 YxVM 赞助</title><link>https://mxx.app/post/YxVM%20lowendaff-hk-eco%20-rong-he-guai-ce-shi-%20-you-%20YxVM%20-zan-zhu.html</link><description>&gt; ### 测试主机 由 YxVM 赞助
+> ### 测试主机 由 YxVM 赞助
 
 |名称|vCPU|内存|硬盘|带宽|流量|价格|购买链接|
 |---|---|---|---|---|---|---|---
-|Basic (测试机型)|1 vCPU|768 MB|20 GB|1000 Mbps|2 TB|$3.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&amp;a=add&amp;pid=126)|
-|Standard|1 vCPU|1 GB|32 GB|1000 Mbps|4 TB|$5.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&amp;a=add&amp;pid=127)|
-|Advanced|2 vCPU|2 GB|60 GB|1000 Mbps|8 TB|$10.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&amp;a=add&amp;pid=128)|
-|Luxury|4 vCPU|4 GB|80 GB|1000 Mbps|20 TB|$20.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&amp;a=add&amp;pid=129)|
+|Basic (测试机型)|1 vCPU|768 MB|20 GB|1000 Mbps|2 TB|$3.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=126)|
+|Standard|1 vCPU|1 GB|32 GB|1000 Mbps|4 TB|$5.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=127)|
+|Advanced|2 vCPU|2 GB|60 GB|1000 Mbps|8 TB|$10.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=128)|
+|Luxury|4 vCPU|4 GB|80 GB|1000 Mbps|20 TB|$20.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=129)|
 
 `
 --------------------- A Bench Script By spiritlhl ----------------------
@@ -39,14 +38,14 @@ Go项目地址：https://github.com/oneclickvirt/ecs
  IPV6 位置         : Hong Kong
  IPV6 子网掩码     : 64
 ----------------------CPU测试--通过sysbench测试-------------------------
- -&gt; CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
  1 线程测试(单核)得分:          1007 Scores
 ---------------------内存测试--感谢lemonbench开源-----------------------
- -&gt; 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
  单线程读测试:          20922.29 MB/s
  单线程写测试:          16122.88 MB/s
 ------------------磁盘dd读写测试--感谢lemonbench开源--------------------
- -&gt; 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
  测试操作               写速度                                  读速度
  100MB-4K Block         44.4 MB/s (10.83 IOPS, 2.36s))          70.8 MB/s (17273 IOPS, 1.48s)
  1GB-1M Block           514 MB/s (490 IOPS, 2.04s)              1.8 GB/s (1723 IOPS, 0.58s)
@@ -282,4 +281,4 @@ Speedtest.net    2331.38 Mbps    2854.05 Mbps    39.18    0.0%
   短链:
     https://paste.spiritlhl.net/#/show/EBNzv.txt
     http://hpaste.spiritlhl.net/#/show/EBNzv.txt
-`。</description><guid isPermaLink="true">https://mxx.app/post/YxVM%20lowendaff-hk-eco%20-rong-he-guai-ce-shi-%20-you-%20YxVM%20-zan-zhu.html</guid><pubDate>Mon, 20 Jan 2025 12:11:08 +0000</pubDate></item><item><title>Gmeek快速上手</title><link>https://mxx.app/post/Gmeek-kuai-su-shang-shou.html</link><description>[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages `、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">https://mxx.app/post/Gmeek-kuai-su-shang-shou.html</guid><pubDate>Mon, 07 Oct 2024 12:31:20 +0000</pubDate></item></channel></rss>
+`
