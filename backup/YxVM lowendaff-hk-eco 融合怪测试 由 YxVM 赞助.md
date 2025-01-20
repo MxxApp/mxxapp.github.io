@@ -7,7 +7,7 @@
 |Advanced|2 vCPU|2 GB|60 GB|1000 Mbps|8 TB|$10.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=128)|
 |Luxury|4 vCPU|4 GB|80 GB|1000 Mbps|20 TB|$20.00 USD|[直达链接](https://yxvm.com/aff.php?aff=643&a=add&pid=129)|
 
-`
+```
 --------------------- A Bench Script By spiritlhl ----------------------
                    测评频道: https://t.me/vps_reviews
 VPS融合怪版本：2025.01.02
@@ -281,4 +281,4 @@ Speedtest.net    2331.38 Mbps    2854.05 Mbps    39.18    0.0%
   短链:
     https://paste.spiritlhl.net/#/show/EBNzv.txt
     http://hpaste.spiritlhl.net/#/show/EBNzv.txt
-`
+```
