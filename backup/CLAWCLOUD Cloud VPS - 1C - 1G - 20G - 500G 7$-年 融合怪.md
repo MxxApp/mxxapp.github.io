@@ -1,7 +1,7 @@
-> ### [购买链接](https://clawcloudsingaporeprivatelimited.sjv.io/QyRd9a)
-`
-优惠码：7CLAW
-`
+|名称|处理器|内存|硬盘|流量|带宽|IP|可用地区|价格|优惠码|购买链接|
+|---|---|---|---|---|---|---|---|---|---|---|
+|Cloud VPS|1 vCPUs|1 GiB|20 GiB|500 GB|200 Mbps|1 IPv4 / 1 IPv6|JP/SG/HK/DE/US|7$/年|7CLAW|[链接](https://clawcloudsingaporeprivatelimited.sjv.io/QyRd9a)|
+
 ```
 --------------------- A Bench Script By spiritlhl ----------------------
                    测评频道: https://t.me/vps_reviews
