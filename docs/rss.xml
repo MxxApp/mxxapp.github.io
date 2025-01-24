@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MXX.APP - MXXAPP - MXX - APP -  梦想乡</title><link>https://mxx.app</link><description>世界很大，梦想很远。</description><copyright>MXX.APP - MXXAPP - MXX - APP -  梦想乡</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/img/logo.png</url><title>avatar</title><link>https://mxx.app</link></image><lastBuildDate>Fri, 24 Jan 2025 12:37:35 +0000</lastBuildDate><managingEditor>MXX.APP - MXXAPP - MXX - APP -  梦想乡</managingEditor><ttl>60</ttl><webMaster>MXX.APP - MXXAPP - MXX - APP -  梦想乡</webMaster><item><title>Alice HK.Free.NS-B-1C1G 融合怪</title><link>https://mxx.app/post/Alice%20HK.Free.NS-B-1C1G%20-rong-he-guai.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MXX.APP - MXXAPP - MXX - APP -  梦想乡</title><link>https://mxx.app</link><description>世界很大，梦想很远。</description><copyright>MXX.APP - MXXAPP - MXX - APP -  梦想乡</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/img/logo.png</url><title>avatar</title><link>https://mxx.app</link></image><lastBuildDate>Fri, 24 Jan 2025 23:51:49 +0000</lastBuildDate><managingEditor>MXX.APP - MXXAPP - MXX - APP -  梦想乡</managingEditor><ttl>60</ttl><webMaster>MXX.APP - MXXAPP - MXX - APP -  梦想乡</webMaster><item><title>Alice HK.Free.NS-B-1C1G 融合怪</title><link>https://mxx.app/post/Alice%20HK.Free.NS-B-1C1G%20-rong-he-guai.html</link><description>```
 --------------------- A Bench Script By spiritlhl ----------------------
                    测评频道: https://t.me/vps_reviews
 VPS融合怪版本：2025.01.02
@@ -282,58 +282,6 @@ Speedtest.net    304.32 Mbps     277.59 Mbps     0.56     0.0%
 |Cloud VPS|1 vCPUs|1 GiB|20 GiB|500 GB|200 Mbps|1 IPv4 / 1 IPv6|JP/SG/HK/DE/US|7$/年|7CLAW|[链接](https://clawcloudsingaporeprivatelimited.sjv.io/QyRd9a)|
 
 ```
---------------------- A Bench Script By spiritlhl ----------------------
-                   测评频道: https://t.me/vps_reviews
-VPS融合怪版本：2025.01.02
-Shell项目地址：https://github.com/spiritLHLS/ecs
-Go项目地址：https://github.com/oneclickvirt/ecs
----------------------基础信息查询--感谢所有开源项目---------------------
- CPU 型号          : Intel(R) Xeon(R) Platinum
- CPU 核心数        : 1
- CPU 频率          : 2500.002 MHz
- CPU 缓存          : L1: 32.00 KB / L2: 1.00 MB / L3: 33.00 MB
- AES-NI指令集      : ✔ Enabled
- VM-x/AMD-V支持    : ❌ Disabled
- 内存              : 121.23 MiB / 923.82 MiB
- Swap              : [ no swap partition or swap file detected ]
- 硬盘空间          : 908.97 MiB / 19952.88 MiB
- 启动盘路径        : /dev/vda1
- 系统在线时间      : 0 days, 0 hour 15 min
- 负载              : 0.39, 0.11, 0.03
- 系统              : Debian GNU/Linux 12 (bookworm) (x86_64)
- 架构              : x86_64 (64 Bit)
- 内核              : 6.1.0-30-cloud-amd64
- TCP加速方式       : cubic
- 虚拟化架构        : KVM
- NAT类型           : Full Cone
- IPV4 ASN          : AS45102 Alibaba (US) Technology Co., Ltd.
- IPV4 位置         : Tokyo / Tokyo / JP
- IPV6 ASN          : AS45102 Alibaba
- IPV6 位置         : Tokyo / Tokyo / Japan
- IPV6 子网掩码     : 128
-----------------------CPU测试--通过sysbench测试-------------------------
- -&gt; CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
- 1 线程测试(单核)得分:          1057 Scores
----------------------内存测试--感谢lemonbench开源-----------------------
- -&gt; 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
- 单线程读测试:          6450.43 MB/s
- 单线程写测试:          6397.42 MB/s
-------------------磁盘dd读写测试--感谢lemonbench开源--------------------
- -&gt; 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
- 测试操作               写速度                                  读速度
- 100MB-4K Block         34.4 MB/s (8387 IOPS, 3.05s)            54.5 MB/s (13300 IOPS, 1.92s)
- 1GB-1M Block           232 MB/s (221 IOPS, 4.52s)              209 MB/s (199 IOPS, 5.02s)
----------------------磁盘fio读写测试--感谢yabs开源----------------------
-Block Size | 4k            (IOPS) | 64k           (IOPS)
-  ------   | ---            ----  | ----           ----
-Read       | 20.68 MB/s    (5.1k) | 96.30 MB/s    (1.5k)
-Write      | 20.69 MB/s    (5.1k) | 96.80 MB/s    (1.5k)
-Total      | 41.38 MB/s   (10.3k) | 193.10 MB/s   (3.0k)
-           |                      |-------------------------------------VPS融合怪测试-------------------------------------
-版本：v0.1.8
-测评频道: https://t.me/vps_reviews
-Go项目地址：https://github.com/oneclickvirt/ecs
-Shell项目地址：https://github.com/spiritLHLS/ecs
 --------------------------------------系统基础信息--------------------------------------
  CPU 型号            : Intel(R) Xeon(R) Platinum @ 2499.998 MHz
  CPU 数量            : 1 Virtual CPU(s)
