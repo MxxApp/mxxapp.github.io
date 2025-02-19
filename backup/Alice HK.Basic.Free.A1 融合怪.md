@@ -1,9 +1,4 @@
 ```
--------------------------------------VPS融合怪测试-------------------------------------
-版本：v0.1.13
-测评频道: https://t.me/vps_reviews
-Go项目地址：https://github.com/oneclickvirt/ecs
-Shell项目地址：https://github.com/spiritLHLS/ecs
 --------------------------------------系统基础信息--------------------------------------
  CPU 型号            : Intel Core Processor (Broadwell, IBRS) @2399.996 MHz
  CPU 数量            : 1 Virtual CPU(s)
