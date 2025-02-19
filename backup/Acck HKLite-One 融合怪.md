@@ -1,9 +1,4 @@
 ```
---------------------- A Bench Script By spiritlhl ----------------------
-                   测评频道: https://t.me/vps_reviews                    
-VPS融合怪版本：2024.11.08
-Shell项目地址：https://github.com/spiritLHLS/ecs
-Go项目地址：https://github.com/oneclickvirt/ecs
 ---------------------基础信息查询--感谢所有开源项目---------------------
  CPU 型号          : Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
  CPU 核心数        : 1
