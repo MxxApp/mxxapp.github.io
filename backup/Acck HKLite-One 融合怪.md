@@ -278,7 +278,4 @@ Speedtest.net    633.45 Mbps     5211.92 Mbps    119.86   0.0%
  总共花费      : 11 分 2 秒
  时间          : Fri Dec  6 19:33:06 EST 2024
 ------------------------------------------------------------------------
-  短链:
-    https://paste.spiritlhl.net/u/h28fuk.txt
-    https://paste.spiritlhl.net/u/h28fuk.txt
 ```
