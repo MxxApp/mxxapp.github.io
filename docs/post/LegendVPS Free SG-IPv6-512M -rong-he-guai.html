@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='/plugins/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="/img/logo.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="```
+--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews
+VPS融合怪版本：2025.02.12
+Shell项目地址：https://github.com/spiritLHLS/ecs
+Go项目地址：https://github.com/oneclickvirt/ecs
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+ CPU 核心数        : 1
+ CPU 频率          : 2099.998 MHz
+ CPU 缓存          : L1: 32.00 KB / L2: 4.00 MB / L3: 16.00 MB
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ✔ Enabled
+ 内存              : 84.47 MiB / 470.02 MiB
+ Swap              : [ no swap partition or swap file detected ]
+ 硬盘空间          : 1.19 GiB / 1.93 GiB
+ 启动盘路径        : /dev/vda1
+ 系统在线时间      : 0 days, 0 hour 27 min
+ 负载              : 2.10, 0.50, 0.16
+ 系统              : Debian GNU/Linux 12 (bookworm) (x86_64)
+ 架构              : x86_64 (64 Bit)
+ 内核              : 6.1.0-30-cloud-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : KVM
+ IPV4 ASN          : AS213845 Cylix Pte. Ltd.
+ IPV4 位置         : Singapore / Singapore / SG
+ IPV6 ASN          : AS213845 Cylix
+ IPV6 位置         : Singapore / Singapore
+----------------------CPU测试--通过sysbench测试-------------------------
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(单核)得分:          820 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          17463.89 MB/s
+ 单线程写测试:          13292.81 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         27.0 MB/s (6588 IOPS, 3.89s)            45.6 MB/s (11135 IOPS, 2.30s)
+ 1GB-1M Block           651 MB/s (908 IOPS, 1.10s)              1.5 GB/s (2093 IOPS, 0.48s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+测试失败请替换另一种方式
+------------流媒体解锁--基于oneclickvirt/CommonMediaTests开源-----------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Netflix-----------------
+[IPV4]
+您的网络可能没有正常配置IPv4，或者没有IPv4网络接入
+[IPV6]
+您的出口IP完整解锁Netflix，支持非自制剧的观看
+NF所识别的IP地域信息：新加坡
+----------------Youtube-----------------
+[IPV4]
+Youtube在您的出口IP所在的国家不提供服务
+[IPV6]
+连接方式: Youtube Video Server
+视频缓存节点地域: 新加坡 新加坡/樟宜  (SIN11S18)
+Youtube识别地域: 新加坡(SG)
+---------------DisneyPlus---------------
+无法获取DisneyPlus权验接口信息，当前测试可能会不准确
+[IPV4]
+DisneyPlus在您的出口IP所在的国家不提供服务
+[IPV6]
+当前IPv4出口所在地区即将开通DisneyPlus
+解锁Netflix，Youtube，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+============[ Multination ]============
+ Dazn:                                  IPv6 Is Not Currently Supported
+ Disney+:                               IPv6 Is Not Currently Supported
+ Netflix:                               Originals Only
+ YouTube Premium:                       Yes (Region: SG)
+ Amazon Prime Video:                    IPv6 Is Not Currently Supported
+ TVBAnywhere+:                          IPv6 Is Not Currently Supported
+ Spotify Registration:                  Yes (Region: SG)
+ OneTrust Region:                       SG [Unknown]
+ iQyi Oversea Region:                   IPv6 Is Not Currently Supported
+ Bing Region:                           SG (Risky)
+ Apple Region:                          SG
+ YouTube CDN:                           Singapore
+ Netflix Preferred CDN:                 Singapore
+ ChatGPT:                               Yes
+ Google Gemini:                         Yes (Region: SGP)
+ Claude:                                Yes
+ Wikipedia Editability:                 Yes
+ Google Play Store:                     Singapore
+ Google Search CAPTCHA Free:            Yes
+ Steam Currency:                        IPv6 Is Not Currently Supported
+ ---Forum---
+ Reddit:                                IPv6 Is Not Currently Supported
+=======================================
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【NL】
+-------------IP质量检测--基于oneclickvirt/securityCheck使用-------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库  [0] | scamalytics数据库 [1] | virustotal数据库   [2] | abuseipdb数据库   [3] | ip2location数据库    [4]
+ip-api数据库  [5] | ipwhois数据库     [6] | ipregistry数据库   [7] | ipdata数据库      [8] | db-ip数据库          [9]
+ipapiis数据库 [A] | ipapicom数据库    [B] | bigdatacloud数据库 [C] | cheervision数据库 [D] | ipqualityscore数据库 [E]
+IPV6:
+安全得分:
+欺诈得分(越低越好): 0 [1]
+安全信息:
+是否云提供商: Yes [D]
+是否数据中心: Yes [1]
+是否代理: No [1 D]
+是否VPN: No [1 D]
+是否TorExit: No [1 D]
+是否Tor出口: No [1 D]
+是否匿名: No [1 D]
+是否攻击者: No [D]
+是否滥用者: No [D]
+是否威胁: No [D]
+是否中继: No [D]
+是否Bogon: No [D]
+DNS-黑名单: 313(Total_Check) 0(Clean) 0(Blacklisted) 313(Other)
+Google搜索可行性：NO
+-------------邮件端口检测--基于oneclickvirt/portchecker开源-------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔
+QQ        ✘     ✘     ✔     ✘     ✔     ✘
+163       ✘     ✘     ✘     ✘     ✔     ✘
+Sohu      ✘     ✘     ✘     ✘     ✘     ✘
+Yandex    ✘     ✘     ✔     ✘     ✔     ✘
+Gmail     ✘     ✘     ✘     ✘     ✘     ✘
+Outlook   ✘     ✘     ✔     ✘     ✔     ✘
+Office365 ✘     ✘     ✔     ✘     ✔     ✘
+Yahoo     ✘     ✘     ✘     ✘     ✘     ✘
+MailCOM   ✘     ✘     ✘     ✘     ✘     ✘
+MailRU    ✘     ✘     ✘     ✘     ✘     ✘
+AOL       ✘     ✘     ✘     ✘     ✘     ✘
+GMX       ✘     ✘     ✘     ✘     ✘     ✘
+Sina      ✘     ✘     ✘     ✘     ✘     ✘
+Apple     ✘     ✘     ✘     ✘     ✘     ✘
+FastMail  ✘     ✘     ✘     ✘     ✘     ✘
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘
+MXRoute   ✘     ✘     ✘     ✘     ✘     ✘
+Namecrane ✘     ✘     ✘     ✘     ✘     ✘
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘
+ZohoMail  ✘     ✘     ✘     ✘     ✘     ✘
+Inbox_eu  ✘     ✘     ✘     ✘     ✘     ✘
+Free_fr   ✘     ✘     ✔     ✘     ✔     ✘
+----------------三网回程--基于oneclickvirt/backtrace开源----------------
+纯IPV6网络无法查询
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自nexttrace，请知悉!
+广州电信 240e:97c:2f:3000::44
+0.48 ms         AS213845 新加坡
+178.67 ms       AS6453 新加坡 tatacommunications.com
+229.42 ms       AS6453 新加坡 tatacommunications.com
+178.56 ms       AS6453 新加坡 tatacommunications.com
+239.67 ms       AS6453 日本 千叶 tatacommunications.com
+248.45 ms       AS6453 美国 tatacommunications.com
+297.49 ms       AS6453 美国 加利福尼亚 洛杉矶 tatacommunications.com
+367.79 ms       AS6453 美国 加利福尼亚州 洛杉矶 tatacommunications.com
+233.12 ms       AS4134 中国 www.chinatelecom.com.cn 电信
+238.49 ms       AS4134 中国 广东 广州 www.chinatelecom.com.cn 电信
+288.22 ms       AS58466 中国 广东 广州 ofidc.com 电信
+238.62 ms       AS58466 中国 广东 广州 ofidc.com 电信
+239.39 ms       AS45090 中国 北京 北京 Tencent-CN
+241.23 ms       AS45090 中国 北京 北京 Tencent-CN
+240.67 ms       AS45090 中国 北京 北京 Tencent-CN
+238.57 ms       AS58466 中国 ofidc.com
+广州联通 2408:8756:f50:1001::c
+0.71 ms         AS213845 新加坡
+0.69 ms         * 网络故障
+0.60 ms         * 新加坡
+0.94 ms         AS2914 新加坡 gin.ntt.net
+* ms    AS2914 新加坡 gin.ntt.net
+40.72 ms        AS2914 中国 香港 gin.ntt.net
+42.44 ms        AS2914 中国 香港 gin.ntt.net
+* ms    AS2914 中国 香港 gin.ntt.net
+174.85 ms       AS4837 中国 广东 广州 chinaunicom.cn 联通
+* ms    AS4837 中国 广东 广州 chinaunicom.cn 联通
+213.95 ms       AS136958 中国 chinaunicom.cn
+* ms    AS136958 中国 chinaunicom.cn
+184.32 ms       AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+180.81 ms       AS136958 中国 chinaunicom.cn
+广州移动 2409:8c54:871:1001::12
+0.70 ms         AS213845 新加坡
+0.55 ms         * 网络故障
+0.66 ms         * 新加坡
+1.43 ms         AS58453 新加坡 cmi.chinamobile.com 移动
+34.60 ms        AS58453 中国 香港 cmi.chinamobile.com
+36.19 ms        AS58453 中国 香港 cmi.chinamobile.com 移动
+40.08 ms        AS58453 中国 香港 cmi.chinamobile.com
+42.62 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+40.07 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+102.45 ms       AS9808 中国 广东 广州 chinamobileltd.com 移动
+153.58 ms       AS56040 中国 广东 gd.10086.cn
+52.45 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+57.64 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+55.70 ms        AS56040 中国 gd.10086.cn
+61.93 ms        AS56040 中国 gd.10086.cn
+------------------------------------------------------------------------
+ 总共花费      : 2 分 14 秒
+ 时间          : Sun Mar 23 10:40:21 EDT 2025
+------------------------------------------------------------------------
+```。">
+<meta property="og:title" content="LegendVPS Free SG-IPv6-512M 融合怪">
+<meta property="og:description" content="```
+--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews
+VPS融合怪版本：2025.02.12
+Shell项目地址：https://github.com/spiritLHLS/ecs
+Go项目地址：https://github.com/oneclickvirt/ecs
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+ CPU 核心数        : 1
+ CPU 频率          : 2099.998 MHz
+ CPU 缓存          : L1: 32.00 KB / L2: 4.00 MB / L3: 16.00 MB
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ✔ Enabled
+ 内存              : 84.47 MiB / 470.02 MiB
+ Swap              : [ no swap partition or swap file detected ]
+ 硬盘空间          : 1.19 GiB / 1.93 GiB
+ 启动盘路径        : /dev/vda1
+ 系统在线时间      : 0 days, 0 hour 27 min
+ 负载              : 2.10, 0.50, 0.16
+ 系统              : Debian GNU/Linux 12 (bookworm) (x86_64)
+ 架构              : x86_64 (64 Bit)
+ 内核              : 6.1.0-30-cloud-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : KVM
+ IPV4 ASN          : AS213845 Cylix Pte. Ltd.
+ IPV4 位置         : Singapore / Singapore / SG
+ IPV6 ASN          : AS213845 Cylix
+ IPV6 位置         : Singapore / Singapore
+----------------------CPU测试--通过sysbench测试-------------------------
+ -> CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(单核)得分:          820 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -> 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          17463.89 MB/s
+ 单线程写测试:          13292.81 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -> 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         27.0 MB/s (6588 IOPS, 3.89s)            45.6 MB/s (11135 IOPS, 2.30s)
+ 1GB-1M Block           651 MB/s (908 IOPS, 1.10s)              1.5 GB/s (2093 IOPS, 0.48s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+测试失败请替换另一种方式
+------------流媒体解锁--基于oneclickvirt/CommonMediaTests开源-----------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Netflix-----------------
+[IPV4]
+您的网络可能没有正常配置IPv4，或者没有IPv4网络接入
+[IPV6]
+您的出口IP完整解锁Netflix，支持非自制剧的观看
+NF所识别的IP地域信息：新加坡
+----------------Youtube-----------------
+[IPV4]
+Youtube在您的出口IP所在的国家不提供服务
+[IPV6]
+连接方式: Youtube Video Server
+视频缓存节点地域: 新加坡 新加坡/樟宜  (SIN11S18)
+Youtube识别地域: 新加坡(SG)
+---------------DisneyPlus---------------
+无法获取DisneyPlus权验接口信息，当前测试可能会不准确
+[IPV4]
+DisneyPlus在您的出口IP所在的国家不提供服务
+[IPV6]
+当前IPv4出口所在地区即将开通DisneyPlus
+解锁Netflix，Youtube，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+============[ Multination ]============
+ Dazn:                                  IPv6 Is Not Currently Supported
+ Disney+:                               IPv6 Is Not Currently Supported
+ Netflix:                               Originals Only
+ YouTube Premium:                       Yes (Region: SG)
+ Amazon Prime Video:                    IPv6 Is Not Currently Supported
+ TVBAnywhere+:                          IPv6 Is Not Currently Supported
+ Spotify Registration:                  Yes (Region: SG)
+ OneTrust Region:                       SG [Unknown]
+ iQyi Oversea Region:                   IPv6 Is Not Currently Supported
+ Bing Region:                           SG (Risky)
+ Apple Region:                          SG
+ YouTube CDN:                           Singapore
+ Netflix Preferred CDN:                 Singapore
+ ChatGPT:                               Yes
+ Google Gemini:                         Yes (Region: SGP)
+ Claude:                                Yes
+ Wikipedia Editability:                 Yes
+ Google Play Store:                     Singapore
+ Google Search CAPTCHA Free:            Yes
+ Steam Currency:                        IPv6 Is Not Currently Supported
+ ---Forum---
+ Reddit:                                IPv6 Is Not Currently Supported
+=======================================
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【NL】
+-------------IP质量检测--基于oneclickvirt/securityCheck使用-------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库  [0] | scamalytics数据库 [1] | virustotal数据库   [2] | abuseipdb数据库   [3] | ip2location数据库    [4]
+ip-api数据库  [5] | ipwhois数据库     [6] | ipregistry数据库   [7] | ipdata数据库      [8] | db-ip数据库          [9]
+ipapiis数据库 [A] | ipapicom数据库    [B] | bigdatacloud数据库 [C] | cheervision数据库 [D] | ipqualityscore数据库 [E]
+IPV6:
+安全得分:
+欺诈得分(越低越好): 0 [1]
+安全信息:
+是否云提供商: Yes [D]
+是否数据中心: Yes [1]
+是否代理: No [1 D]
+是否VPN: No [1 D]
+是否TorExit: No [1 D]
+是否Tor出口: No [1 D]
+是否匿名: No [1 D]
+是否攻击者: No [D]
+是否滥用者: No [D]
+是否威胁: No [D]
+是否中继: No [D]
+是否Bogon: No [D]
+DNS-黑名单: 313(Total_Check) 0(Clean) 0(Blacklisted) 313(Other)
+Google搜索可行性：NO
+-------------邮件端口检测--基于oneclickvirt/portchecker开源-------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔
+QQ        ✘     ✘     ✔     ✘     ✔     ✘
+163       ✘     ✘     ✘     ✘     ✔     ✘
+Sohu      ✘     ✘     ✘     ✘     ✘     ✘
+Yandex    ✘     ✘     ✔     ✘     ✔     ✘
+Gmail     ✘     ✘     ✘     ✘     ✘     ✘
+Outlook   ✘     ✘     ✔     ✘     ✔     ✘
+Office365 ✘     ✘     ✔     ✘     ✔     ✘
+Yahoo     ✘     ✘     ✘     ✘     ✘     ✘
+MailCOM   ✘     ✘     ✘     ✘     ✘     ✘
+MailRU    ✘     ✘     ✘     ✘     ✘     ✘
+AOL       ✘     ✘     ✘     ✘     ✘     ✘
+GMX       ✘     ✘     ✘     ✘     ✘     ✘
+Sina      ✘     ✘     ✘     ✘     ✘     ✘
+Apple     ✘     ✘     ✘     ✘     ✘     ✘
+FastMail  ✘     ✘     ✘     ✘     ✘     ✘
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘
+MXRoute   ✘     ✘     ✘     ✘     ✘     ✘
+Namecrane ✘     ✘     ✘     ✘     ✘     ✘
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘
+ZohoMail  ✘     ✘     ✘     ✘     ✘     ✘
+Inbox_eu  ✘     ✘     ✘     ✘     ✘     ✘
+Free_fr   ✘     ✘     ✔     ✘     ✔     ✘
+----------------三网回程--基于oneclickvirt/backtrace开源----------------
+纯IPV6网络无法查询
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自nexttrace，请知悉!
+广州电信 240e:97c:2f:3000::44
+0.48 ms         AS213845 新加坡
+178.67 ms       AS6453 新加坡 tatacommunications.com
+229.42 ms       AS6453 新加坡 tatacommunications.com
+178.56 ms       AS6453 新加坡 tatacommunications.com
+239.67 ms       AS6453 日本 千叶 tatacommunications.com
+248.45 ms       AS6453 美国 tatacommunications.com
+297.49 ms       AS6453 美国 加利福尼亚 洛杉矶 tatacommunications.com
+367.79 ms       AS6453 美国 加利福尼亚州 洛杉矶 tatacommunications.com
+233.12 ms       AS4134 中国 www.chinatelecom.com.cn 电信
+238.49 ms       AS4134 中国 广东 广州 www.chinatelecom.com.cn 电信
+288.22 ms       AS58466 中国 广东 广州 ofidc.com 电信
+238.62 ms       AS58466 中国 广东 广州 ofidc.com 电信
+239.39 ms       AS45090 中国 北京 北京 Tencent-CN
+241.23 ms       AS45090 中国 北京 北京 Tencent-CN
+240.67 ms       AS45090 中国 北京 北京 Tencent-CN
+238.57 ms       AS58466 中国 ofidc.com
+广州联通 2408:8756:f50:1001::c
+0.71 ms         AS213845 新加坡
+0.69 ms         * 网络故障
+0.60 ms         * 新加坡
+0.94 ms         AS2914 新加坡 gin.ntt.net
+* ms    AS2914 新加坡 gin.ntt.net
+40.72 ms        AS2914 中国 香港 gin.ntt.net
+42.44 ms        AS2914 中国 香港 gin.ntt.net
+* ms    AS2914 中国 香港 gin.ntt.net
+174.85 ms       AS4837 中国 广东 广州 chinaunicom.cn 联通
+* ms    AS4837 中国 广东 广州 chinaunicom.cn 联通
+213.95 ms       AS136958 中国 chinaunicom.cn
+* ms    AS136958 中国 chinaunicom.cn
+184.32 ms       AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+180.81 ms       AS136958 中国 chinaunicom.cn
+广州移动 2409:8c54:871:1001::12
+0.70 ms         AS213845 新加坡
+0.55 ms         * 网络故障
+0.66 ms         * 新加坡
+1.43 ms         AS58453 新加坡 cmi.chinamobile.com 移动
+34.60 ms        AS58453 中国 香港 cmi.chinamobile.com
+36.19 ms        AS58453 中国 香港 cmi.chinamobile.com 移动
+40.08 ms        AS58453 中国 香港 cmi.chinamobile.com
+42.62 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+40.07 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+102.45 ms       AS9808 中国 广东 广州 chinamobileltd.com 移动
+153.58 ms       AS56040 中国 广东 gd.10086.cn
+52.45 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+57.64 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+55.70 ms        AS56040 中国 gd.10086.cn
+61.93 ms        AS56040 中国 gd.10086.cn
+------------------------------------------------------------------------
+ 总共花费      : 2 分 14 秒
+ 时间          : Sun Mar 23 10:40:21 EDT 2025
+------------------------------------------------------------------------
+```。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mxx.app/post/LegendVPS%20Free%20SG-IPv6-512M%20-rong-he-guai.html">
+<meta property="og:image" content="/img/logo.png">
+<title>LegendVPS Free SG-IPv6-512M 融合怪</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">LegendVPS Free SG-IPv6-512M 融合怪</h1>
+<div class="title-right">
+    <a href="https://mxx.app" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">--------------------- A Bench Script By spiritlhl ----------------------
+                   测评频道: https://t.me/vps_reviews
+VPS融合怪版本：2025.02.12
+Shell项目地址：https://github.com/spiritLHLS/ecs
+Go项目地址：https://github.com/oneclickvirt/ecs
+---------------------基础信息查询--感谢所有开源项目---------------------
+ CPU 型号          : Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+ CPU 核心数        : 1
+ CPU 频率          : 2099.998 MHz
+ CPU 缓存          : L1: 32.00 KB / L2: 4.00 MB / L3: 16.00 MB
+ AES-NI指令集      : ✔ Enabled
+ VM-x/AMD-V支持    : ✔ Enabled
+ 内存              : 84.47 MiB / 470.02 MiB
+ Swap              : [ no swap partition or swap file detected ]
+ 硬盘空间          : 1.19 GiB / 1.93 GiB
+ 启动盘路径        : /dev/vda1
+ 系统在线时间      : 0 days, 0 hour 27 min
+ 负载              : 2.10, 0.50, 0.16
+ 系统              : Debian GNU/Linux 12 (bookworm) (x86_64)
+ 架构              : x86_64 (64 Bit)
+ 内核              : 6.1.0-30-cloud-amd64
+ TCP加速方式       : bbr
+ 虚拟化架构        : KVM
+ IPV4 ASN          : AS213845 Cylix Pte. Ltd.
+ IPV4 位置         : Singapore / Singapore / SG
+ IPV6 ASN          : AS213845 Cylix
+ IPV6 位置         : Singapore / Singapore
+----------------------CPU测试--通过sysbench测试-------------------------
+ -&gt; CPU 测试中 (Fast Mode, 1-Pass @ 5sec)
+ 1 线程测试(单核)得分:          820 Scores
+---------------------内存测试--感谢lemonbench开源-----------------------
+ -&gt; 内存测试 Test (Fast Mode, 1-Pass @ 5sec)
+ 单线程读测试:          17463.89 MB/s
+ 单线程写测试:          13292.81 MB/s
+------------------磁盘dd读写测试--感谢lemonbench开源--------------------
+ -&gt; 磁盘IO测试中 (4K Block/1M Block, Direct Mode)
+ 测试操作               写速度                                  读速度
+ 100MB-4K Block         27.0 MB/s (6588 IOPS, 3.89s)            45.6 MB/s (11135 IOPS, 2.30s)
+ 1GB-1M Block           651 MB/s (908 IOPS, 1.10s)              1.5 GB/s (2093 IOPS, 0.48s)
+---------------------磁盘fio读写测试--感谢yabs开源----------------------
+测试失败请替换另一种方式
+------------流媒体解锁--基于oneclickvirt/CommonMediaTests开源-----------
+以下测试的解锁地区是准确的，但是不是完整解锁的判断可能有误，这方面仅作参考使用
+----------------Netflix-----------------
+[IPV4]
+您的网络可能没有正常配置IPv4，或者没有IPv4网络接入
+[IPV6]
+您的出口IP完整解锁Netflix，支持非自制剧的观看
+NF所识别的IP地域信息：新加坡
+----------------Youtube-----------------
+[IPV4]
+Youtube在您的出口IP所在的国家不提供服务
+[IPV6]
+连接方式: Youtube Video Server
+视频缓存节点地域: 新加坡 新加坡/樟宜  (SIN11S18)
+Youtube识别地域: 新加坡(SG)
+---------------DisneyPlus---------------
+无法获取DisneyPlus权验接口信息，当前测试可能会不准确
+[IPV4]
+DisneyPlus在您的出口IP所在的国家不提供服务
+[IPV6]
+当前IPv4出口所在地区即将开通DisneyPlus
+解锁Netflix，Youtube，DisneyPlus上面和下面进行比较，不同之处自行判断
+----------------流媒体解锁--感谢RegionRestrictionCheck开源--------------
+ 以下为IPV4网络测试，若无IPV4网络则无输出
+ 以下为IPV6网络测试，若无IPV6网络则无输出
+============[ Multination ]============
+ Dazn:                                  IPv6 Is Not Currently Supported
+ Disney+:                               IPv6 Is Not Currently Supported
+ Netflix:                               Originals Only
+ YouTube Premium:                       Yes (Region: SG)
+ Amazon Prime Video:                    IPv6 Is Not Currently Supported
+ TVBAnywhere+:                          IPv6 Is Not Currently Supported
+ Spotify Registration:                  Yes (Region: SG)
+ OneTrust Region:                       SG [Unknown]
+ iQyi Oversea Region:                   IPv6 Is Not Currently Supported
+ Bing Region:                           SG (Risky)
+ Apple Region:                          SG
+ YouTube CDN:                           Singapore
+ Netflix Preferred CDN:                 Singapore
+ ChatGPT:                               Yes
+ Google Gemini:                         Yes (Region: SGP)
+ Claude:                                Yes
+ Wikipedia Editability:                 Yes
+ Google Play Store:                     Singapore
+ Google Search CAPTCHA Free:            Yes
+ Steam Currency:                        IPv6 Is Not Currently Supported
+ ---Forum---
+ Reddit:                                IPv6 Is Not Currently Supported
+=======================================
+---------------TikTok解锁--感谢lmc999的源脚本及fscarmen PR--------------
+ Tiktok Region:         【NL】
+-------------IP质量检测--基于oneclickvirt/securityCheck使用-------------
+数据仅作参考，不代表100%准确，如果和实际情况不一致请手动查询多个数据库比对
+以下为各数据库编号，输出结果后将自带数据库来源对应的编号
+ipinfo数据库  [0] | scamalytics数据库 [1] | virustotal数据库   [2] | abuseipdb数据库   [3] | ip2location数据库    [4]
+ip-api数据库  [5] | ipwhois数据库     [6] | ipregistry数据库   [7] | ipdata数据库      [8] | db-ip数据库          [9]
+ipapiis数据库 [A] | ipapicom数据库    [B] | bigdatacloud数据库 [C] | cheervision数据库 [D] | ipqualityscore数据库 [E]
+IPV6:
+安全得分:
+欺诈得分(越低越好): 0 [1]
+安全信息:
+是否云提供商: Yes [D]
+是否数据中心: Yes [1]
+是否代理: No [1 D]
+是否VPN: No [1 D]
+是否TorExit: No [1 D]
+是否Tor出口: No [1 D]
+是否匿名: No [1 D]
+是否攻击者: No [D]
+是否滥用者: No [D]
+是否威胁: No [D]
+是否中继: No [D]
+是否Bogon: No [D]
+DNS-黑名单: 313(Total_Check) 0(Clean) 0(Blacklisted) 313(Other)
+Google搜索可行性：NO
+-------------邮件端口检测--基于oneclickvirt/portchecker开源-------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔
+QQ        ✘     ✘     ✔     ✘     ✔     ✘
+163       ✘     ✘     ✘     ✘     ✔     ✘
+Sohu      ✘     ✘     ✘     ✘     ✘     ✘
+Yandex    ✘     ✘     ✔     ✘     ✔     ✘
+Gmail     ✘     ✘     ✘     ✘     ✘     ✘
+Outlook   ✘     ✘     ✔     ✘     ✔     ✘
+Office365 ✘     ✘     ✔     ✘     ✔     ✘
+Yahoo     ✘     ✘     ✘     ✘     ✘     ✘
+MailCOM   ✘     ✘     ✘     ✘     ✘     ✘
+MailRU    ✘     ✘     ✘     ✘     ✘     ✘
+AOL       ✘     ✘     ✘     ✘     ✘     ✘
+GMX       ✘     ✘     ✘     ✘     ✘     ✘
+Sina      ✘     ✘     ✘     ✘     ✘     ✘
+Apple     ✘     ✘     ✘     ✘     ✘     ✘
+FastMail  ✘     ✘     ✘     ✘     ✘     ✘
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘
+MXRoute   ✘     ✘     ✘     ✘     ✘     ✘
+Namecrane ✘     ✘     ✘     ✘     ✘     ✘
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘
+ZohoMail  ✘     ✘     ✘     ✘     ✘     ✘
+Inbox_eu  ✘     ✘     ✘     ✘     ✘     ✘
+Free_fr   ✘     ✘     ✔     ✘     ✔     ✘
+----------------三网回程--基于oneclickvirt/backtrace开源----------------
+纯IPV6网络无法查询
+---------------------回程路由--感谢fscarmen开源及PR---------------------
+依次测试电信/联通/移动经过的地区及线路，核心程序来自nexttrace，请知悉!
+广州电信 240e:97c:2f:3000::44
+0.48 ms         AS213845 新加坡
+178.67 ms       AS6453 新加坡 tatacommunications.com
+229.42 ms       AS6453 新加坡 tatacommunications.com
+178.56 ms       AS6453 新加坡 tatacommunications.com
+239.67 ms       AS6453 日本 千叶 tatacommunications.com
+248.45 ms       AS6453 美国 tatacommunications.com
+297.49 ms       AS6453 美国 加利福尼亚 洛杉矶 tatacommunications.com
+367.79 ms       AS6453 美国 加利福尼亚州 洛杉矶 tatacommunications.com
+233.12 ms       AS4134 中国 www.chinatelecom.com.cn 电信
+238.49 ms       AS4134 中国 广东 广州 www.chinatelecom.com.cn 电信
+288.22 ms       AS58466 中国 广东 广州 ofidc.com 电信
+238.62 ms       AS58466 中国 广东 广州 ofidc.com 电信
+239.39 ms       AS45090 中国 北京 北京 Tencent-CN
+241.23 ms       AS45090 中国 北京 北京 Tencent-CN
+240.67 ms       AS45090 中国 北京 北京 Tencent-CN
+238.57 ms       AS58466 中国 ofidc.com
+广州联通 2408:8756:f50:1001::c
+0.71 ms         AS213845 新加坡
+0.69 ms         * 网络故障
+0.60 ms         * 新加坡
+0.94 ms         AS2914 新加坡 gin.ntt.net
+* ms    AS2914 新加坡 gin.ntt.net
+40.72 ms        AS2914 中国 香港 gin.ntt.net
+42.44 ms        AS2914 中国 香港 gin.ntt.net
+* ms    AS2914 中国 香港 gin.ntt.net
+174.85 ms       AS4837 中国 广东 广州 chinaunicom.cn 联通
+* ms    AS4837 中国 广东 广州 chinaunicom.cn 联通
+213.95 ms       AS136958 中国 chinaunicom.cn
+* ms    AS136958 中国 chinaunicom.cn
+184.32 ms       AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+* ms    AS45090 中国 北京 北京 Shenzhen Tencent Computer Systems Company Limited
+180.81 ms       AS136958 中国 chinaunicom.cn
+广州移动 2409:8c54:871:1001::12
+0.70 ms         AS213845 新加坡
+0.55 ms         * 网络故障
+0.66 ms         * 新加坡
+1.43 ms         AS58453 新加坡 cmi.chinamobile.com 移动
+34.60 ms        AS58453 中国 香港 cmi.chinamobile.com
+36.19 ms        AS58453 中国 香港 cmi.chinamobile.com 移动
+40.08 ms        AS58453 中国 香港 cmi.chinamobile.com
+42.62 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+40.07 ms        AS9808 中国 广东 广州 chinamobileltd.com 移动
+102.45 ms       AS9808 中国 广东 广州 chinamobileltd.com 移动
+153.58 ms       AS56040 中国 广东 gd.10086.cn
+52.45 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+57.64 ms        AS56040 中国 广东 广州 IDC gd.10086.cn 移动
+55.70 ms        AS56040 中国 gd.10086.cn
+61.93 ms        AS56040 中国 gd.10086.cn
+------------------------------------------------------------------------
+ 总共花费      : 2 分 14 秒
+ 时间          : Sun Mar 23 10:40:21 EDT 2025
+------------------------------------------------------------------------
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:left;"><p>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明来自 <a href="https://mxx.app" target="_blank">MXX.APP</a> 。</p><p>原文链接：<a href="https://mxx.app/post/LegendVPS%20Free%20SG-IPv6-512M%20-rong-he-guai.html">https://mxx.app/post/LegendVPS%20Free%20SG-IPv6-512M%20-rong-he-guai.html</a></p></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://mxx.app">MXX.APP</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","MxxApp/mxxapp.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='/plugins/articletoc.js'></script><script src='/plugins/lightbox.js'></script>
+
+</html>
