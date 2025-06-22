@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MXX.APP - MXXAPP - MXX - APP -  梦想乡</title><link>https://mxx.app</link><description>世界很大，梦想很远。</description><copyright>MXX.APP - MXXAPP - MXX - APP -  梦想乡</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/img/logo.png</url><title>avatar</title><link>https://mxx.app</link></image><lastBuildDate>Sun, 22 Jun 2025 04:50:51 +0000</lastBuildDate><managingEditor>MXX.APP - MXXAPP - MXX - APP -  梦想乡</managingEditor><ttl>60</ttl><webMaster>MXX.APP - MXXAPP - MXX - APP -  梦想乡</webMaster><item><title>BitsFlowCloud  CN-HKG-7K62-VPS - HKG-S 融合怪</title><link>https://mxx.app/post/BitsFlowCloud%20%20CN-HKG-7K62-VPS%20-%20HKG-S%20-rong-he-guai.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MXX.APP - MXXAPP - MXX - APP -  梦想乡</title><link>https://mxx.app</link><description>世界很大，梦想很远。</description><copyright>MXX.APP - MXXAPP - MXX - APP -  梦想乡</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/img/logo.png</url><title>avatar</title><link>https://mxx.app</link></image><lastBuildDate>Sun, 22 Jun 2025 06:09:23 +0000</lastBuildDate><managingEditor>MXX.APP - MXXAPP - MXX - APP -  梦想乡</managingEditor><ttl>60</ttl><webMaster>MXX.APP - MXXAPP - MXX - APP -  梦想乡</webMaster><item><title>BitsFlowCloud  CN-HKG-7K62-VPS - HKG-S 融合怪</title><link>https://mxx.app/post/BitsFlowCloud%20%20CN-HKG-7K62-VPS%20-%20HKG-S%20-rong-he-guai.html</link><description>```
 -------------------------------------VPS融合怪测试-------------------------------------
 版本：v0.1.33
 测评频道: https://t.me/vps_reviews
@@ -2135,55 +2135,10 @@ Speedtest.net   3879.25 Mbps    4749.83 Mbps    0.37 ms         0.0%
 时间          : Sun Mar 23 03:18:01 EDT 2025
 ----------------------------------------------------------------------------------
 ```
-```
-********************************************************************************
-                   网络质量体检报告：2a14:7dc0:100:*:*:*:*:*
-                        bash &lt;(curl -sL Net.Check.Place)
-                       https://github.com/xykt/NetQuality
-            报告时间：2025-03-23 15:21:37 CST  脚本版本：v2025-03-21
-********************************************************************************
-一、BGP信息（BGP.TOOLS &amp; HE.NET）
-注册信息：          RIPE, AS213845, Cylix Pte. Ltd., Prefix/48
-注册/修改日期：     2025-03-21 / NoRecord
-地区：              [SG]Singapore, South-eastern Asia, Asia
-地址：              SINGAPORE, Singapore, 179098, 111 NORTH BRIDGE ROAD
-二、本地策略
-TCP拥塞控制算法：bbr          TCP接收缓冲区（rmem）：4096 131072 6291456
-队列调度算法：   fq           TCP发送缓冲区（wmem）：4096 16384 4194304
-三、接入信息（*=Tier1 *=非Tier1 *=上游）
-互联网交换点接入数：99+       上游数量：1         对等互联数量：1
-AS174   AS701  AS1299  AS2914 AS3257 AS3320 AS3356 AS3491 AS5511 AS6453 AS6461
-Cogent Verizon Arelion   NTT    GTT   DTAG   Lumen  PCCW  Orange  TATA   Zayo
-AS6762  AS6830   AS6939   AS7018 AS12956  AS4637  AS9002 AS9886 AS49304
-Sparkle Liberty Hurricane  AT&amp;T  Telxius TelstraG  RETN  CTCSCI  SAKURA
-四、三网TCP大包延迟（依次为电信|联通|移动 ⠂=80ms）    京⣶⣶⣶⣶⣶223⡆⣶⡆⣶⣶168⣤⡄⡇⣤⣤149
-津⣿⢸⣿⣿⣿249⣶⡆⠀⣶⢠160⣄⣤⣤⣠⣄83  冀⣿⣿⣿⣿⣿244⣤⣤⣤⣤⣤157⣤⣤⣤⣤⣤92  晋⣿⣿⣿⣿⣿251⣶⣶⡆⣶⣶174⣤⣤⣤⣤⣤90
-蒙⣿⣷⣿⣾⣷244⠀⣶⠀⣶⣶163⣤⣤⣤⣤⣤99  辽⣿⣿⣿⣿⣿244⠀⣶⣶⡆⡆175⣤⣤⣤⣤⣤100 吉⣿⣿⣿⣿⣿255⣶⢰⣶⣶⠀179⣤⣤⣤⣤⣤97
-黑⣿⣿⣿⣿⣿261⣾⣶⣶⣶⡆201⣤⣤⣤⣤⣤98  沪⣷⣿⣶⣷⣿240⢰⢰⣶⣶⡆168⣀⣀⣀⣀⣀64  苏⣶⣶⣶⣶⣶219⢰⡆⣶⢰⣶169⣀⣀⣀⣀⣀75
-浙⣶⣷⣿⣿⣶280⠀⣶⢰⣶⡆167⣀⣀⣀⣀⣀72  皖⣾⣶⣶⣶⣶232⢸⣶⠀⣶⣶178⣠⣀⣄⣠⣤80  闽⣷⣷⣶⣶⣶236⣶⣶⢰⡆⣶169⣀⣀⣀⣀⣀66
-赣⣿⣿⣾⣿⣿245⢰⣴⣤⡄⣶159⣀⣀⣀⣀⣀73  鲁⣶⣶⣶⣶⣷235⢰⣶⣶⢰⣶171⣤⣤⣤⣤⣤87  豫⣿⣿⣿⣿⣿246⢰⣶⣶⡆⢰160⣤⣤⣤⣤⣤87
-鄂⣶⣷⣶⣾⣶238⡄⣤⣤⣤⣤155⣤⣤⣤⣤⣤85  湘⣿⣿⣿⣿⣿266⠀⣴⣤⣾⣶177⣀⣀⣀⣀⣀66  粤⢰⠀⢰⢰⠀234⣶⢰⣶⣶⢰166⣀⣀⣀⣀⣀56
-桂⣿⣿⣿⣿⣿251⠀⢰⠀⡆⢰166⣤⣄⣤⣤⣤83  琼⣶⡇⣶⣶⣶239⣴⣶⣶⢰⣶162⣀⣀⣀⣀⣀67  渝⣿⣿⣿⣿⣿248⡆⣶⣶⣷⣶196⣀⣀⣄⣀⣀75
-川⣿⣿⣿⣿⣿253⢰⡆⢰⣶⣶174⣠⣤⣤⣤⣤83  贵⣿⣿⣿⣿⣿251⣶⣶⣶⣶⣶165⣀⣀⣀⣀⣀71  云⡇⢸⣿⣿⣿288⣶⣶⣶⣶⢰166⣀⣀⣀⣀⣀74
-藏⣿⣿⣿⣿⣿289⣶⣶⡆⢰⡆208⣤⣤⣤⣤⣤133 陕⣿⣿⣿⣿⣿252⣶⣶⢰⣶⣶165⣤⣄⣤⣤⣤86  甘⣿⣿⣿⣿⣿244⣾⣶⢰⡆⢰202⣤⣤⣤⣤⣤101
-青⣿⣿⣿⣿⣿255⣶⣶⣶⡆⢰177⣤⣤⣤⣤⣤105 宁⢸⣿⣿⣿⣿262⣶⠀⣶⣶⡆166⣤⣤⣤⣤⣤104 新⣿⣿⣿⣿⣿273⡆⢰⣶⢰⢰204⣤⡄⣤⣤⣤122
-五、三网回程路由（线路可能随网络负载动态变化）
-北京TCP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-北京UDP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-上海TCP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-上海UDP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-广州TCP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-广州UDP：电信     TATA-&gt;163    || 联通      NTT-&gt;4837   || 移动  Telstra-&gt;CMI
-七、国际互连   延迟 发送 重传 接收 重传||单位：ms Mbps  延迟 发送 重传 接收 重传
-香港      ⣀⣀⣀⣀⣀⣀ 36   678   0   628   3||东京      ⣀⣀⣀⣀⣀⣀ 72   346   0   317   0
-新加坡    ⣀⣀⣀⣀⣀⣀  1  2578   5  6559 234||悉尼      ⣤⣤⣤⣤⣤⣤ 96   247   0   225   0
-洛杉矶    ⣶⣶⣶⣶⣶⣶174   123   0   113   0||纽约      ⣷⣶⡇⣾⣾⣶244    69   0     0  15
-法兰克福  ⣶⣶⣶⣶⣶⣶196    58   8    95  86||伦敦      ⣶⣶⣶⣶⣶⣶188   106   0   103   0
-阿姆斯特丹⣶⣶⣶⣶⣶⣶199   126   0   129   0||圣保罗    ⣿⣿⣿⣿⣿⣿338    45   0    50   0
-================================================================================
-```
 ![](https://Report.Check.Place/ip/3S9FJWHUC.svg)
-![](https://Report.Check.Place/ip/39O17I16L.svg)。</description><guid isPermaLink="true">https://mxx.app/post/LegendVPS%20SG-7K62-1-1G-SIP%202%24--yue--20%24--nian--48%24-3-nian-%20-rong-he-guai.html</guid><pubDate>Sun, 23 Mar 2025 07:46:50 +0000</pubDate></item><item><title>LegendVPS Free SG-TEST-IPv4-512M 融合怪</title><link>https://mxx.app/post/LegendVPS%20Free%20SG-TEST-IPv4-512M%20-rong-he-guai.html</link><description>```
+![](https://Report.Check.Place/net/EMZJOA3MP.svg)
+![](https://Report.Check.Place/ip/39O17I16L.svg)
+![](https://Report.Check.Place/net/1P43OKKHL.svg)。</description><guid isPermaLink="true">https://mxx.app/post/LegendVPS%20SG-7K62-1-1G-SIP%202%24--yue--20%24--nian--48%24-3-nian-%20-rong-he-guai.html</guid><pubDate>Sun, 23 Mar 2025 07:46:50 +0000</pubDate></item><item><title>LegendVPS Free SG-TEST-IPv4-512M 融合怪</title><link>https://mxx.app/post/LegendVPS%20Free%20SG-TEST-IPv4-512M%20-rong-he-guai.html</link><description>```
 -------------------------------------VPS融合怪测试-------------------------------------
 版本：v0.1.20
 测评频道: https://t.me/vps_reviews
