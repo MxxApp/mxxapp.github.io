@@ -10,13 +10,21 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="# 一机多用、多用户共享电脑方案整理
+<meta name="description" content="---
 
-本文档介绍两种主流的 Windows 多用户共享/分屏或串流方案，并附带详细配置流程、实用技巧及相关工具记录，方便电脑并排或远程办公、娱乐使用。">
+## 软件ASTER  
+- 收费软件，可免费试用14天
+- 国内官网：[https://ibik.cn/](https://ibik.cn/)  
+- 俄罗斯官网：[https://www.ibik.ru/](https://www.ibik.ru/)
+- 适用场景：电脑物理接近、资源充足、硬件可扩展（如多显示器）环境。">
 <meta property="og:title" content="一机多用、多用户共享电脑方案整理">
-<meta property="og:description" content="# 一机多用、多用户共享电脑方案整理
+<meta property="og:description" content="---
 
-本文档介绍两种主流的 Windows 多用户共享/分屏或串流方案，并附带详细配置流程、实用技巧及相关工具记录，方便电脑并排或远程办公、娱乐使用。">
+## 软件ASTER  
+- 收费软件，可免费试用14天
+- 国内官网：[https://ibik.cn/](https://ibik.cn/)  
+- 俄罗斯官网：[https://www.ibik.ru/](https://www.ibik.ru/)
+- 适用场景：电脑物理接近、资源充足、硬件可扩展（如多显示器）环境。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mxx.app/post/yi-ji-duo-yong-%E3%80%81-duo-yong-hu-gong-xiang-dian-nao-fang-an-zheng-li.html">
 <meta property="og:image" content="/img/logo.png">
@@ -81,111 +89,129 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h1>一机多用、多用户共享电脑方案整理</h1>
-<p>本文档介绍两种主流的 Windows 多用户共享/分屏或串流方案，并附带详细配置流程、实用技巧及相关工具记录，方便电脑并排或远程办公、娱乐使用。</p>
-<hr>
-<h2>1. 方案一：ASTER——本地多用户拖机方案</h2>
+<div class="markdown-body" id="postBody"><hr>
+<h2>软件ASTER</h2>
 <ul>
-<li><strong>软件名称</strong>：ASTER</li>
-<li><strong>功能简介</strong>：让一台电脑同时连接多组键鼠+显示器，每人独立操作。适合物理机临近共享办公/娱乐。</li>
-<li><strong>授权与价格</strong>：14天免费试用，永久2用户版需298元</li>
-<li><strong>购买/下载</strong>：
-<ul>
+<li>收费软件，可免费试用14天</li>
 <li>国内官网：<a href="https://ibik.cn/" rel="nofollow">https://ibik.cn/</a></li>
 <li>俄罗斯官网：<a href="https://www.ibik.ru/" rel="nofollow">https://www.ibik.ru/</a></li>
-</ul>
-</li>
-<li><strong>适用场景</strong>：电脑物理接近、资源充足、硬件可扩展（如多显示器）环境。</li>
+<li>适用场景：电脑物理接近、资源充足、硬件可扩展（如多显示器）环境。</li>
 </ul>
 <hr>
-<h2>2. 方案二：串流方案——Duo + Sunshine + Moonlight</h2>
+<h2>串流分享多人使用，类似云电脑方案</h2>
+<h3>软件Duo</h3>
 <ul>
-<li><strong>核心</strong>：Duo 支持多用户远程串流登录，并可与 Sunshine 和 Moonlight 搭配，实现云桌面功能。</li>
-<li><strong>开源主页</strong>：<a href="https://github.com/DuoStream/Duo">https://github.com/DuoStream/Duo</a></li>
-<li><strong>授权模式</strong>：免费（但免费版限1个实例和最高30Hz显示输出）</li>
+<li>免费支持一个实例，显示输出限制30Hz</li>
+<li>官网：<a href="https://github.com/DuoStream/Duo">https://github.com/DuoStream/Duo</a></li>
+<li>核心：Duo 支持多用户远程串流登录，与 Moonlight 搭配，实现云桌面功能。</li>
 </ul>
-<h3>2.1 Duo 搭建详细流程</h3>
-<h4>（1）Windows 本地准备</h4>
-<ul>
-<li>新增一个 Windows 用户（可以用空密码）</li>
-<li><strong>注意</strong>：Win系统默认空密码无法远程，需要解锁对应策略：
+<h3>搭建教程：</h3>
 <ol>
-<li><code class="notranslate">Win+R</code>，输入 <code class="notranslate">gpedit.msc</code> 打开组策略编辑器</li>
-<li>按此路径依次进入：<br>
-<code class="notranslate">计算机配置 &gt; Windows设置 &gt; 安全设置 &gt; 本地策略 &gt; 安全选项</code></li>
-<li>右侧找到“账户：使用空密码的本地账户只允许进行控制台登录”，改为<strong>禁用</strong></li>
+<li><strong>Win增加一个新用户，可空密码，Duo新版已支持空密码</strong></li>
+<li><strong>Win不支持空密码登陆，需要修改组策略</strong>
+<ul>
+<li>运行<code class="notranslate">gpedit.msc</code>打开组策略编辑器</li>
+<li>路径：<code class="notranslate">计算机配置 &gt; Windows 设置 &gt; 安全设置 &gt; 本地策略 &gt; 安全选项</code></li>
+<li>右边拉倒底部，找到 <code class="notranslate">账户：使用空密码的本地账户只允许进行控制台登陆</code>，修改成禁用</li>
+</ul>
+</li>
+<li><strong>切换到新创建的用户，进去配置好桌面，现有Duo版本建议配合Sandboxie使用</strong></li>
+<li><strong>防止其它用户关机重启主机，切回主用户，运行mmc打开控制台根节点</strong>
+<ul>
+<li>左上角文件 &gt; 添加/删除管理单元 &gt; 组策略对象编辑器</li>
+<li>添加 &gt; 浏览 &gt; 用户 &gt; 选择新添加的用户 &gt; 配置新用户单独的组策略</li>
+<li>路径：用户配置 &gt; 管理模版 &gt; "开始"菜单和任务栏</li>
+<li>找到 <code class="notranslate">删除并阻止访问"关机"、“重新启动”、"睡眠"和"休眠"命令</code>，修改成启用</li>
+<li>可选：找到 <code class="notranslate">删除"开始"菜单上的"注销"</code>，修改成启动</li>
+<li>文件 &gt; 保存 即可</li>
+</ul>
+</li>
+<li><strong>安装Duo,运行Duo Manager&gt;+New&gt;按需设置，完成后按Start启动</strong>
+<ul>
+<li>等待右侧Pair New Client亮起，点击Open Sunshine配置账号密码后，即可用moonlight连接了。</li>
+</ul>
+</li>
+<li><strong>和主用户共用程序，配合Sandboxie使用更好，等待Duo更新沙箱功能。</strong>
+<ul>
+<li>Sandboxie具体使用方法自行搜索，以下是一些使用记录</li>
+</ul>
+</li>
 </ol>
-</li>
-</ul>
-<h4>（2）新用户环境配置</h4>
+<hr>
+<h2>Sandboxie快捷方式使用记录</h2>
 <ul>
-<li>切换登录到新建账号，配置好桌面环境</li>
-<li>为防止其它用户关机/重启主机，请配置独立的组策略：
-<ul>
-<li><code class="notranslate">mmc</code> &gt; 添加/删除管理单元 &gt; 组策略对象编辑器 &gt; 选择新建的用户</li>
-<li>路径：<br>
-<code class="notranslate">用户配置 &gt; 管理模板 &gt; “开始”菜单和任务栏</code></li>
-<li>启用“删除并阻止访问‘关机’、‘重启’、‘睡眠’和‘休眠’命令”</li>
-<li>（可选）启用“删除‘开始’菜单上的‘注销’”</li>
-</ul>
-</li>
-</ul>
-<h4>（3）沙箱隔离（推荐）</h4>
-<p>配合 <a href="https://github.com/sandboxie-plus/Sandboxie">Sandboxie</a> 使用，多开同一个应用互不影响。</p>
-<ul>
-<li>示例快捷方式：
-<ul>
-<li>普通模式：
-<pre class="notranslate"><code class="notranslate">"C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox D:\Game\test.exe
+<li>普通模式 示例：
+<pre class="notranslate"><code class="notranslate">目标："C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox D:\Game\test.exe
+起始位置：D:\Game\
 </code></pre>
 </li>
-<li>最小化silent启动：
-<pre class="notranslate"><code class="notranslate">"C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox D:\Game\Steam\steam.exe -silent
+<li>最小化启动 -silent 示例：
+<pre class="notranslate"><code class="notranslate">目标："C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox D:\Game\Steam\steam.exe -silent
+起始位置：D:\Game\Steam\
 </code></pre>
 </li>
-<li>管理员启动：
-<pre class="notranslate"><code class="notranslate">"C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox /elevate "D:\Game\HMCL-3.12.0.328.exe"
+<li>管理员启动 /elevate 示例：
+<pre class="notranslate"><code class="notranslate">目标："C:\Program Files\Sandboxie-Plus\Start.exe" /box:DefaultBox /elevate "D:\Game\HMCL-3.12.0.328.exe"
+起始位置：D:\Game\
 </code></pre>
 </li>
-</ul>
-</li>
-<li><strong>自启动配置</strong>：在新账号下运行 <code class="notranslate">shell:startup</code>，将需要随机启动项目的快捷方式放入即可。</li>
-</ul>
-<h4>（4）安装与运行 Duo</h4>
-<ul>
-<li>安装 Duo</li>
-<li>运行 Duo Manager：<code class="notranslate">+New</code> 创建实例，设置好后 <code class="notranslate">Start</code> 启动</li>
-<li>配置 Sunshine（<a href="https://github.com/LizardByte/Sunshine">传送门</a>）账号密码</li>
-<li>使用 Moonlight（<a href="https://github.com/moonlight-stream">传送门</a>）等串流客户端连接</li>
 </ul>
 <hr>
-<h2>3. 自动断开串流连接脚本（VBS）</h2>
-<p>对于不懂如何断流的用户，可制作 Sunshine 控制API的快捷脚本：</p>
-<div class="highlight highlight-source-vbnet"><pre class="notranslate"><span class="pl-c">' Sunshine 断开连接脚本范例</span>
+<h2>沙箱中的Steam随机启动</h2>
+<ul>
+<li>新用户下运行 <code class="notranslate">shell:startup</code> 打开属于用户独立的启动文件夹，把需要随机启动的项目快捷键放入里面即可。</li>
+</ul>
+<hr>
+<h2>断开串流连接，方便用户退出或远程关闭</h2>
+<h3>创建vbs脚本，对于不懂如何断流的用户，可制作 Sunshine 控制API的快捷脚本：</h3>
+<div class="highlight highlight-source-vbnet"><pre class="notranslate"><span class="pl-c">' 1. 配置信息</span>
 <span class="pl-k">Dim</span> <span class="pl-smi">user,</span> <span class="pl-smi">pass,</span> <span class="pl-smi">url,</span> <span class="pl-smi">auth,</span> <span class="pl-smi">curlCmd</span>
-<span class="pl-smi">user</span> <span class="pl-smi">=</span> <span class="pl-s">"用户名"</span>  <span class="pl-c">' 填写实际用户名</span>
-<span class="pl-smi">pass</span> <span class="pl-smi">=</span> <span class="pl-s">"密码"</span>    <span class="pl-c">' 填写实际密码</span>
+<span class="pl-smi">user</span> <span class="pl-smi">=</span> <span class="pl-s">"用户名"</span>
+<span class="pl-smi">pass</span> <span class="pl-smi">=</span> <span class="pl-s">"密码"</span>
 <span class="pl-smi">url</span> <span class="pl-smi">=</span> <span class="pl-s">"https://127.0.0.1:31609/api/apps/close"</span>
 
+<span class="pl-c">' 2. 构建认证和命令</span>
+<span class="pl-c">' 注意：-s 是静默模式，-k 是忽略证书，-u 是账号密码，-H 是指定格式</span>
 <span class="pl-smi">auth</span> <span class="pl-smi">=</span> <span class="pl-smi">user</span> <span class="pl-smi">&amp;</span> <span class="pl-s">":"</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">pass</span>
 <span class="pl-smi">curlCmd</span> <span class="pl-smi">=</span> <span class="pl-s">"curl.exe -s -k -u "</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">auth</span> <span class="pl-smi">&amp;</span> <span class="pl-s">" -H ""Content-Type: application/json"" -X POST "</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">url</span>
 
+<span class="pl-c">' 3. 执行命令而不显示窗口 (0 代表隐藏窗口)</span>
 <span class="pl-k">Set</span> <span class="pl-smi">shell</span> <span class="pl-smi">=</span> <span class="pl-smi">CreateObject(</span><span class="pl-s">"WScript.Shell"</span><span class="pl-smi">)</span>
 <span class="pl-smi">shell.Run</span> <span class="pl-smi">curlCmd,</span> <span class="pl-s">0</span><span class="pl-smi">,</span> <span class="pl-k">True</span>
 
-<span class="pl-c">' 如需提醒，去掉下行注释</span>
+<span class="pl-c">' 可选：如果你想给用户一个简单的确认弹窗，可以去掉下面一行的注释</span>
 <span class="pl-c">' MsgBox "远程连接已断开", 64, "提示"</span></pre></div>
-<blockquote>
-<p>保存为 <code class="notranslate">.vbs</code>，改好账号密码，制作成快捷方式即可一键断开。</p>
-</blockquote>
-<hr>
-<h2>4. 相关开源项目及资源</h2>
 <ul>
-<li><a href="https://github.com/LizardByte/Sunshine">Sunshine</a>：支持多端高性能串流的服务器端</li>
-<li><a href="https://github.com/moonlight-stream">Moonlight</a>：主流串流客户端</li>
-<li><a href="https://github.com/ClassicOldSong/Apollo">Apollo</a>：Sunshine 管理工具</li>
-<li><a href="https://github.com/Nonary/Vibepollo">Vibepollo</a>：Moonlight 增强客户端</li>
-<li><a href="https://github.com/sandboxie-plus/Sandboxie">Sandboxie</a>：应用沙盒隔离必备</li>
+<li>保存后，创建快捷方式放到需要的位置即可。</li>
+</ul>
+<hr>
+<h2>相关软件记录</h2>
+<ul>
+<li>Sunshine
+<ul>
+<li><a href="https://github.com/LizardByte/Sunshine">https://github.com/LizardByte/Sunshine</a></li>
+</ul>
+</li>
+<li>moonlight
+<ul>
+<li><a href="https://github.com/moonlight-stream">https://github.com/moonlight-stream</a></li>
+</ul>
+</li>
+<li>Apollo
+<ul>
+<li><a href="https://github.com/ClassicOldSong/Apollo">https://github.com/ClassicOldSong/Apollo</a></li>
+</ul>
+</li>
+<li>Vibepollo
+<ul>
+<li><a href="https://github.com/Nonary/Vibepollo">https://github.com/Nonary/Vibepollo</a></li>
+</ul>
+</li>
+<li>Sandboxie
+<ul>
+<li><a href="https://github.com/sandboxie-plus/Sandboxie">https://github.com/sandboxie-plus/Sandboxie</a></li>
+</ul>
+</li>
 </ul>
 <hr></div>
 <div style="font-size:small;margin-top:8px;float:left;"><p>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明来自 <a href="https://mxx.app" target="_blank">MXX.APP</a> 。</p><p>原文链接：<a href="https://mxx.app/post/yi-ji-duo-yong-%E3%80%81-duo-yong-hu-gong-xiang-dian-nao-fang-an-zheng-li.html">https://mxx.app/post/yi-ji-duo-yong-%E3%80%81-duo-yong-hu-gong-xiang-dian-nao-fang-an-zheng-li.html</a></p></div>
