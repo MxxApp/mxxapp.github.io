@@ -29,7 +29,7 @@
 <meta property="og:url" content="https://mxx.app/post/yi-ji-duo-yong-%E3%80%81-duo-yong-hu-gong-xiang-dian-nao-fang-an-zheng-li.html">
 <meta property="og:image" content="/img/logo.png">
 <title>一机多用、多用户共享电脑方案整理</title>
-<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
 
 
 </head>
@@ -164,23 +164,24 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <hr>
 <h2>断开串流连接，方便用户退出或远程关闭</h2>
 <h3>创建vbs脚本，对于不懂如何断流的用户，可制作 Sunshine 控制API的快捷脚本：</h3>
-<div class="highlight highlight-source-vbnet"><pre class="notranslate"><span class="pl-c">' 1. 配置信息</span>
-<span class="pl-k">Dim</span> <span class="pl-smi">user,</span> <span class="pl-smi">pass,</span> <span class="pl-smi">url,</span> <span class="pl-smi">auth,</span> <span class="pl-smi">curlCmd</span>
-<span class="pl-smi">user</span> <span class="pl-smi">=</span> <span class="pl-s">"用户名"</span>
-<span class="pl-smi">pass</span> <span class="pl-smi">=</span> <span class="pl-s">"密码"</span>
-<span class="pl-smi">url</span> <span class="pl-smi">=</span> <span class="pl-s">"https://127.0.0.1:31609/api/apps/close"</span>
+<pre lang="vbscript" class="notranslate"><code class="notranslate">' 1. 配置信息
+Dim user, pass, url, auth, curlCmd
+user = "用户名"
+pass = "密码"
+url = "https://127.0.0.1:31609/api/apps/close"
 
-<span class="pl-c">' 2. 构建认证和命令</span>
-<span class="pl-c">' 注意：-s 是静默模式，-k 是忽略证书，-u 是账号密码，-H 是指定格式</span>
-<span class="pl-smi">auth</span> <span class="pl-smi">=</span> <span class="pl-smi">user</span> <span class="pl-smi">&amp;</span> <span class="pl-s">":"</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">pass</span>
-<span class="pl-smi">curlCmd</span> <span class="pl-smi">=</span> <span class="pl-s">"curl.exe -s -k -u "</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">auth</span> <span class="pl-smi">&amp;</span> <span class="pl-s">" -H ""Content-Type: application/json"" -X POST "</span> <span class="pl-smi">&amp;</span> <span class="pl-smi">url</span>
+' 2. 构建认证和命令
+' 注意：-s 是静默模式，-k 是忽略证书，-u 是账号密码，-H 是指定格式
+auth = user &amp; ":" &amp; pass
+curlCmd = "curl.exe -s -k -u " &amp; auth &amp; " -H ""Content-Type: application/json"" -X POST " &amp; url
 
-<span class="pl-c">' 3. 执行命令而不显示窗口 (0 代表隐藏窗口)</span>
-<span class="pl-k">Set</span> <span class="pl-smi">shell</span> <span class="pl-smi">=</span> <span class="pl-smi">CreateObject(</span><span class="pl-s">"WScript.Shell"</span><span class="pl-smi">)</span>
-<span class="pl-smi">shell.Run</span> <span class="pl-smi">curlCmd,</span> <span class="pl-s">0</span><span class="pl-smi">,</span> <span class="pl-k">True</span>
+' 3. 执行命令而不显示窗口 (0 代表隐藏窗口)
+Set shell = CreateObject("WScript.Shell")
+shell.Run curlCmd, 0, True
 
-<span class="pl-c">' 可选：如果你想给用户一个简单的确认弹窗，可以去掉下面一行的注释</span>
-<span class="pl-c">' MsgBox "远程连接已断开", 64, "提示"</span></pre></div>
+' 可选：如果你想给用户一个简单的确认弹窗，可以去掉下面一行的注释
+' MsgBox "远程连接已断开", 64, "提示"
+</code></pre>
 <ul>
 <li>保存后，创建快捷方式放到需要的位置即可。</li>
 </ul>
